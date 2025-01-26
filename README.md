@@ -1,7 +1,7 @@
-## React Firebase Students Management App
+React Firebase Students Management App
 This project is a Students Management App built using React.js and Firebase, which allows users to manage a list of students. The application includes functionalities like adding, viewing, editing, and deleting student data. It features Firebase Authentication for secure login and Firestore for real-time database operations.
 
-## Features
+Features
 1. User Authentication
 Login using Firebase Authentication.
 Pre-configured admin credentials for testing:
@@ -19,19 +19,17 @@ A hamburger menu for toggling the sidebar on smaller screens.
 Integrated with Firebase Firestore for storing and fetching student data.
 5. Responsiveness
 Fully responsive design, compatible with desktops, tablets, and mobile devices.
-## Tech Stack
-## Frontend
+Tech Stack
+Frontend
 React.js
-
 CSS
-
-## Backend
-
+Backend
 Firebase Authentication
 Firebase Firestore
-
-## Project Structure
-
+Project Structure
+arduino
+Copy
+Edit
 ├── public/
 ├── src/
 │   ├── components/
@@ -47,23 +45,20 @@ Firebase Firestore
 │   ├── App.js
 │   ├── index.js
 └── README.md
-
-## Getting Started
+Getting Started
 Follow these instructions to set up the project on your local machine.
 
 1. Clone the Repository
-````````````````````````````````
+
 git clone https://github.com/ansarialiakbar/your-repo-name.git
 cd your-repo-name
-````````````````````````
 2. Install Dependencies
 Make sure you have Node.js installed. Then, run:
 
 
 npm install
-
 3. Configure Firebase
-Go to Firebase Console.
+Go to the Firebase Console.
 Create a new project and enable:
 Authentication (Email/Password Sign-in method).
 Firestore Database.
@@ -85,41 +80,39 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
 export const auth = getAuth(app);
-
 4. Run the Project
 Start the development server:
-```````````````````
+
+
 npm start
 The app will run at http://localhost:3000.
-```````````````````````
 
 Deployment
 You can deploy the app using services like Vercel or Netlify. Make sure to configure environment variables if required.
 
-### Screenshots
+Screenshots
 1. Login Page
 The login page with Firebase Authentication.
-
- ![Login Page](./public/assets/screenshots/login-page.png)
+   ![Login Page](/assets/screenshots/login-page.png)
 
 
 2. Students Page
 The main page displaying a list of students and options to manage them.
 
-   ![Students Page](./public/assets/screenshots/students-page.png)
+      ![Students Page](/assets/screenshots/students-page.png)
 
 
 3. Add Student Modal
 A modal for adding new students to the database.
 
-    ![Students Model](./public/assets/screenshots/students-modal.png)
-
+ ![Students Modal](/assets/screenshots/students-modal.png)
 
 
 License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-## Contact
+Contact
 Ali Akbar
 GitHub: @ansarialiakbar
 Email: ansarialiakbar2001@gmail.com
+
