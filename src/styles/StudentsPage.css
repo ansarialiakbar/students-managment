@@ -1,0 +1,140 @@
+/* General Styling */
+.students-page {
+  position: relative;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Table Styling */
+.students-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 70px;
+}
+
+.students-table th,
+.students-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.students-table th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.students-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.students-table tr:hover {
+  background-color: #ddd;
+}
+
+/* Action Icons Styling */
+.action-icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.action-icons svg {
+  cursor: pointer;
+  color: #4CAF50;
+  font-size: 20px;
+}
+
+.action-icons svg:hover {
+  color: #333;
+}
+
+/* Add Student Button Styling */
+.add-student-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #96bd0c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+.add-student-btn:hover {
+  background-color: #98c102;
+}
+
+/* Student View Modal Styling */
+.view-student-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.view-student-modal > div {
+  background-color: #333;
+  padding: 20px 30px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+}
+
+/* Modal Header */
+.view-student-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.view-student-modal-header h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.view-student-modal-header button {
+  /* background: none; */
+  background-color: #4CAF50;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  /* color: #1cbc21; */
+  cursor: pointer;
+}
+
+/* Modal Content */
+.view-student-modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+}
+
+.view-student-modal-content p {
+  margin: 0;
+  font-size: 16px;
+  color: black;
+}
+
+/* Sidebar and Miscellaneous */
+.hamburger-icon {
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: black;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}

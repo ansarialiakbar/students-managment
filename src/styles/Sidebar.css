@@ -1,0 +1,118 @@
+/* Sidebar container */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  background-color: #333;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+  z-index: 1000;
+}
+
+/* When the sidebar is closed */
+.sidebar.closed {
+  transform: translateX(-250px); /* Hide the sidebar */
+}
+
+/* When the sidebar is open */
+.sidebar.open {
+  transform: translateX(0); /* Show the sidebar */
+}
+
+/* Sidebar header */
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #222;
+  position: relative; /* Ensure correct positioning of the toggle button */
+}
+
+/* Sidebar title */
+.sidebar-header h1 {
+  margin: 0;
+  font-size: 20px;
+  color: white;
+}
+
+/* Sidebar toggle button */
+.sidebar-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1100;
+  position: absolute;
+  top: 10px;
+  right: 10px; /* Ensure it's on the top-right corner */
+}
+
+/* Sidebar list */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  padding: 15px;
+  border-bottom: 1px solid #444;
+}
+
+/* Sidebar links and buttons */
+.sidebar ul li a,
+.sidebar ul li button {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  padding: 10px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+/* Sidebar link/button hover effect */
+.sidebar ul li a:hover,
+.sidebar ul li button:hover {
+  background-color: #555;
+}
+
+/* For the hamburger icon (on the main page) */
+.hamburger-icon {
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: black;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1100; /* Ensure it's above other content */
+}
+
+/* Mobile styling: If you want to display the sidebar on smaller screens, use media queries */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .sidebar ul li {
+    padding: 12px;
+  }
+
+  .sidebar-header h1 {
+    font-size: 18px;
+  }
+
+  .sidebar ul li a,
+  .sidebar ul li button {
+    font-size: 16px;
+  }
+}
