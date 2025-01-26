@@ -129,7 +129,9 @@ The app will run at http://localhost:3000.
 
 ## Deployment
 
-You can deploy the app using services like Vercel or Netlify. Make sure to configure environment variables if required.
+You can deploy the app using services like Vercel, render or Netlify. Make sure to configure environment variables if required.
+
+Deployed Link: https://students-managment.onrender.com/login
 
 ## Screenshots
 
